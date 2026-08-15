@@ -1,0 +1,9 @@
+celebrity_name,gender,bio,result_group,provenance,licence_text,attribution,image_path
+Leonardo DiCaprio,male,"Oscar-winning actor known for Titanic, Inception, and The Revenant.",hollywood,wikimedia,"CC BY-SA 4.0","Photo by Jay L. Clendenin / Wikimedia Commons",../../data/images/leonardo_dicaprio/img_01.jpg
+Leonardo DiCaprio,male,"Oscar-winning actor known for Titanic, Inception, and The Revenant.",hollywood,wikimedia,"CC BY-SA 4.0","Photo by Jay L. Clendenin / Wikimedia Commons",../../data/images/leonardo_dicaprio/img_02.jpg
+Zendaya,female,"Emmy-winning actress and fashion icon known for Euphoria and Dune.",hollywood,wikimedia,"CC BY-SA 3.0","Photo by Glenn Francis / Wikimedia Commons",../../data/images/zendaya/img_01.jpg
+Zendaya,female,"Emmy-winning actress and fashion icon known for Euphoria and Dune.",hollywood,wikimedia,"CC BY-SA 3.0","Photo by Glenn Francis / Wikimedia Commons",../../data/images/zendaya/img_02.jpg
+Shah Rukh Khan,male,"Iconic Indian actor and producer, known as King of Bollywood.",bollywood,wikimedia,"CC BY-SA 4.0","Photo by Subhash Sharma / Wikimedia Commons",../../data/images/shah_rukh_khan/img_01.jpg
+Shah Rukh Khan,male,"Iconic Indian actor and producer, known as King of Bollywood.",bollywood,wikimedia,"CC BY-SA 4.0","Photo by Subhash Sharma / Wikimedia Commons",../../data/images/shah_rukh_khan/img_02.jpg
+Deepika Padukone,female,"Acclaimed Indian actress and producer, star of Padmaavat and Chhapaak.",bollywood,wikimedia,"CC BY-SA 4.0","Photo by Bollywood Hungama / Wikimedia Commons",../../data/images/deepika_padukone/img_01.jpg
+Deepika Padukone,female,"Acclaimed Indian actress and producer, star of Padmaavat and Chhapaak.",bollywood,wikimedia,"CC BY-SA 4.0","Photo by Bollywood Hungama / Wikimedia Commons",../../data/images/deepika_padukone/img_02.jpg

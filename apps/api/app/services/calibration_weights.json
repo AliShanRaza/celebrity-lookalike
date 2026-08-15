@@ -1,0 +1,9 @@
+{
+  "calibrator_type": "sigmoid_calibrated_v2_insightface_buffalo_l_arcface",
+  "model_version": "insightface_buffalo_l_arcface",
+  "s_mid": 0.25,
+  "steepness": 8.0,
+  "train_mse": 3.21,
+  "test_mse": 4.15,
+  "is_calibrated": true
+}

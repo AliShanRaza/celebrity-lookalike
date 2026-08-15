@@ -1,0 +1,455 @@
+/* Global Styles - High-impact Modern Dark UI Design */
+
+:root {
+  /* Color Palette matching reference image */
+  --bg-main: #0c0d10;
+  --bg-card-dark: #0e0f14;
+  --bg-card-dark-inner: #161821;
+  --bg-card-mint: #3df3c4;
+  --bg-card-mint-hover: #32e2b5;
+  
+  --accent-neon-yellow: #e2ff38;
+  --accent-neon-yellow-hover: #d2f026;
+  --accent-purple: #8b3dff;
+  --accent-purple-glow: rgba(139, 61, 255, 0.4);
+  --accent-cyan: #06b6d4;
+
+  --text-main: #ffffff;
+  --text-muted: #94a3b8;
+  --text-dark: #08090b;
+  --text-serif: 'Playfair Display', Georgia, serif;
+
+  --font-display: 'Plus Jakarta Sans', 'Syne', sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'Inter', sans-serif;
+
+  --border-dark-card: rgba(255, 255, 255, 0.08);
+  --border-dark-subtle: rgba(255, 255, 255, 0.04);
+  --shadow-primary: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Background Ambient Glow */
+.ambient-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.ambient-orb-1 {
+  position: absolute;
+  top: -15%;
+  right: 10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(139, 61, 255, 0.18) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(100px);
+}
+
+.ambient-orb-2 {
+  position: absolute;
+  bottom: 5%;
+  left: 10%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(61, 243, 196, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
+  filter: blur(120px);
+}
+
+/* Main Container */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header Floating Navbar */
+.header-wrapper {
+  position: sticky;
+  top: 1.25rem;
+  z-index: 100;
+  margin-bottom: 2rem;
+}
+
+.header-container {
+  background: rgba(18, 19, 25, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-dark-card);
+  border-radius: 20px;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo-badge {
+  width: 38px;
+  height: 38px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-neon-yellow);
+}
+
+/* Neon Pill Button */
+.btn-neon-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--accent-neon-yellow);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.7rem 1.6rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(226, 255, 56, 0.25);
+}
+
+.btn-neon-pill:hover {
+  background-color: var(--accent-neon-yellow-hover);
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(226, 255, 56, 0.4);
+}
+
+.btn-outline-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.7rem 1.6rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Main Hero Card Container */
+.hero-card {
+  background: var(--bg-card-dark);
+  border: 1px solid var(--border-dark-card);
+  border-radius: 28px;
+  padding: 3.5rem 3rem 2.5rem 3rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-primary);
+  margin-bottom: 2rem;
+}
+
+/* Purple Glow Badge Indicator on right edge */
+.hero-card-side-indicator {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 28px;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  background: var(--accent-purple);
+  box-shadow: -4px 0 15px var(--accent-purple-glow);
+}
+
+.hero-content-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.hero-tag-serif {
+  font-family: var(--text-serif);
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  margin-bottom: 1.25rem;
+  font-style: normal;
+}
+
+.hero-headline-display {
+  font-family: var(--font-display);
+  font-size: 3.6rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.05;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.hero-star-accent {
+  color: var(--accent-neon-yellow);
+  font-style: normal;
+  display: inline-block;
+  margin: 0 0.15em;
+  text-shadow: 0 0 12px rgba(226, 255, 56, 0.5);
+}
+
+.hero-subtext {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 480px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-family: var(--text-serif);
+}
+
+.hero-action-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Brand Logos Bar */
+.brand-logos-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.brand-join-text {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.brand-logos-row {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  flex-wrap: wrap;
+}
+
+.brand-logo-item {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  opacity: 0.9;
+
+}
+
+/* Secondary Mint Green Section Card */
+.mint-card {
+  background-color: var(--bg-card-mint);
+  border-radius: 28px;
+  padding: 3.5rem 3rem;
+  color: var(--text-dark);
+  box-shadow: 0 20px 40px rgba(61, 243, 196, 0.15);
+  margin-bottom: 3rem;
+}
+
+.mint-card-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.mint-headline-display {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: #000000;
+  letter-spacing: -0.02em;
+}
+
+/* Glass & Card Components */
+.glass-card {
+  background: var(--bg-card-dark-inner);
+  border: 1px solid var(--border-dark-card);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.25s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(226, 255, 56, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Results Grid System */
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Custom Responsive Styles */
+@media (max-width: 992px) {
+  .results-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .hero-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .mint-card-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero-headline-display {
+    font-size: 2.75rem;
+  }
+
+  .mint-headline-display {
+    font-size: 2.4rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .results-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .hero-card, .mint-card {
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .hero-headline-display {
+    font-size: 2.2rem;
+  }
+
+  .mint-headline-display {
+    font-size: 2rem;
+  }
+}
+
+/* Honest Trust & Feature Badges Styling */
+.brand-logos-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.brand-join-text {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.honest-badges-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.honest-badge-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1.1rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: all 0.2s ease;
+}
+
+.honest-badge-item:hover {
+  background: rgba(226, 255, 56, 0.1);
+  border-color: rgba(226, 255, 56, 0.3);
+  color: var(--accent-neon-yellow);
+}
+
+.honest-badge-icon {
+  color: var(--accent-neon-yellow);
+  flex-shrink: 0;
+}

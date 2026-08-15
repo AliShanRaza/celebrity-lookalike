@@ -1,0 +1,11 @@
+pair_id,user_photo_path,celebrity_photo_path,human_rating,target_resemblance_score,notes
+pair_001,../../data/images/leonardo_dicaprio/img_01.jpg,../../data/images/leonardo_dicaprio/img_02.jpg,strong_match,92.0,Same individual (Leonardo DiCaprio) different photo
+pair_002,../../data/images/zendaya/img_01.jpg,../../data/images/zendaya/img_02.jpg,strong_match,88.0,Same individual (Zendaya) different photo
+pair_003,../../data/images/shah_rukh_khan/img_01.jpg,../../data/images/shah_rukh_khan/img_02.jpg,strong_match,94.0,Same individual (Shah Rukh Khan) different photo
+pair_004,../../data/images/deepika_padukone/img_01.jpg,../../data/images/deepika_padukone/img_02.jpg,strong_match,90.0,Same individual (Deepika Padukone) different photo
+pair_005,../../data/images/leonardo_dicaprio/img_01.jpg,../../data/images/shah_rukh_khan/img_01.jpg,moderate_match,68.0,Different individuals with similar male facial structure
+pair_006,../../data/images/zendaya/img_01.jpg,../../data/images/deepika_padukone/img_01.jpg,moderate_match,65.0,Different individuals with similar female facial structure
+pair_007,../../data/images/leonardo_dicaprio/img_01.jpg,../../data/images/zendaya/img_01.jpg,weak_match,25.0,Cross-gender non-match (DiCaprio vs Zendaya)
+pair_008,../../data/images/shah_rukh_khan/img_01.jpg,../../data/images/deepika_padukone/img_01.jpg,weak_match,20.0,Cross-gender non-match (SRK vs Deepika)
+pair_009,../../data/images/leonardo_dicaprio/img_02.jpg,../../data/images/deepika_padukone/img_02.jpg,weak_match,22.0,Cross-gender non-match (DiCaprio vs Deepika)
+pair_010,../../data/images/zendaya/img_02.jpg,../../data/images/shah_rukh_khan/img_02.jpg,weak_match,18.0,Cross-gender non-match (Zendaya vs SRK)
