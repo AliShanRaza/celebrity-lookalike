@@ -1,38 +1,36 @@
-# Dependencies & Builds
-node_modules/
-.next/
-apps/web/.next/
-out/
-build/
-dist/
-
-# Python Virtual Environment & Cache
-venv/
-.venv/
-__pycache__/
-*.pyc
-.pytest_cache/
-
-# Environment Files
-.env
-.env.local
-.env.development.local
-.env.production.local
-apps/api/.env
-
-# Data - large/regenerable, not needed in git
-data/images/
-apps/api/data/images/
-apps/api/data/celebrity_embeddings_cache.json
-data/celebrity_embeddings_cache.json
-apps/api/ingestion_report.csv
-data/dry_run_hollywood.csv
-
-# Build artifacts
-apps/web/tsconfig.tsbuildinfo
-
-# OS & IDE Files
-.DS_Store
-Thumbs.db
-.vscode/
+# Dependencies & Builds 
+node_modules/ 
+.next/ 
+apps/web/.next/ 
+out/ 
+build/ 
+dist/ 
+ 
+# Python Virtual Environment & Cache 
+venv/ 
+.venv/ 
+__pycache__/ 
+*.pyc 
+.pytest_cache/ 
+ 
+# Environment Files 
+.env 
+.env.local 
+.env.development.local 
+.env.production.local 
+apps/api/.env 
+ 
+# Data - large/regenerable, not needed in git 
+apps/api/data/celebrity_embeddings_cache.json 
+data/celebrity_embeddings_cache.json 
+apps/api/ingestion_report.csv 
+data/dry_run_hollywood.csv 
+ 
+# Build artifacts 
+apps/web/tsconfig.tsbuildinfo 
+ 
+# OS & IDE Files 
+.DS_Store 
+Thumbs.db 
+.vscode/ 
 .idea/
